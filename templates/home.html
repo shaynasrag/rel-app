@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+
+<h1>
+    Good {{message}}, {{fName}}! What would you like to do today?
+</h1>
+<form action="/register" method="post">
+    <button class="btn btn-primary" type="submit">Register</button>
+</form>
+{% endblock %}
